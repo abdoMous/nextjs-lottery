@@ -3,6 +3,8 @@ import Image from "next/image"
 import styles from "../styles/Home.module.css"
 import Header from "../components/Header"
 import LotteryEntrance from "../components/LotteryEntrance"
+import Participants from "../components/Participants"
+import LastWinner from "../components/LastWinner"
 
 export default function Home() {
     return (
@@ -14,6 +16,10 @@ export default function Home() {
             </Head>
             <Header />
             <LotteryEntrance />
+            <div className="flex flex-row">
+                <Participants className="basis-3/4" />
+                <LastWinner className="basis-1/4" />
+            </div>
         </div>
     )
 }

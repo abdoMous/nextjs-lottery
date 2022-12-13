@@ -64,6 +64,7 @@ export default function LotteryEntrance() {
     useEffect(() => {
         if (isWeb3Enabled) {
             updateUI()
+            console.log("entranceFee",entranceFee)
         }
     }, [isWeb3Enabled])
 
